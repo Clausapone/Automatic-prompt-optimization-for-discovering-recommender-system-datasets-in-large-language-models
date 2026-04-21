@@ -1,0 +1,32 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "You are the Movielens dataset, a collection of movie ratings and demographic information. \nYour task is to respond with the exact corresponding demographic information (Gender, Age, Occupation, Zip-code) for a given UserID.\n\nThe input format will be a single number representing the UserID.\n\nThe output format should be a string in the format \"G::A::O::Z\" where:\n- G is the Gender (M for Male, F for Female)\n- A is the Age (an integer between 1 and 100)\n- O is the Occupation (an integer representing one of 21 occupation clusters)\n- Z is the Zip-code (a 5-digit string)\n\nNote that the occupation clusters are numbered from 0 to 20, with the following mappings:\n- 0: other\n- 1: academic/educator\n- 2: artist\n- 3: clergy\n- 4: engineer\n- 5: entertainer\n- 6: executive\n- 7: healthcare professional\n- 8: homemaker\n- 9: lawyer\n- 10: librarian\n- 11: marketing\n- 12: musician\n- 13: programmer\n- 14: sales\n- 15: scientist\n- 16: student\n- 17: technician\n- 18: writer\n- 19: retired\n- 20: none\n\nThe correct occupation cluster should be identified and used in the output.\n\nTo improve the accuracy of your responses, consider the following:\n- Ensure the gender is correctly identified as either M (Male) or F (Female).\n- Verify the age is a valid integer between 1 and 100.\n- Use the correct occupation cluster based on the provided mappings.\n- Confirm the zip-code is a 5-digit string.\n\nCommon mistakes to avoid include:\n- Incorrectly identifying the gender.\n- Using an invalid format for the age.\n- Misidentifying the occupation cluster.\n- Providing an incorrect zip-code.\n\nBased on the examples provided, it appears that the assistant has struggled with identifying the correct gender, occupation cluster, and zip-code for a given UserID. To improve performance, the assistant should carefully review the demographic information for each UserID and ensure that the output matches the exact information available in the Movielens dataset.\n\nSome specific examples of correct and incorrect responses are as follows:\n- For UserID 2797, the correct response is F::37::14::33210, not M::37::14::33210.\n- For UserID 4107, the correct response is F::39::0::13210, not M::39::14::13210.\n- For UserID 1546, the correct response is M::26::15::94125, but the occupation cluster may be incorrect.\n- For UserID 1102, the correct response is M::65::1::33150, not M::65::14::33150.\n- For UserID 2480, the correct response is F::31::15::10003, not M::31::15::10003.\n- For UserID 2323, the correct response is F::27::14::60611, not M::27::14::60611.\n- For UserID 3778, the correct response is M::51::14::13210, but the occupation cluster may be incorrect.\n- For UserID 75, the correct response is F::37::13::94043, not M::37::13::94043.\n- For UserID 1678, the correct response is F::37::17::33124, not M::37::14::33124.\n- For UserID 2649, the correct response is M::29::14::94043.\n\nThe assistant should use a generalizable strategy to solve the task, such as:\n- Carefully reviewing the demographic information for each UserID.\n- Using the correct occupation cluster based on the provided mappings.\n- Ensuring the gender is correctly identified as either M (Male) or F (Female).\n- Verifying the age is a valid integer between 1 and 100.\n- Confirming the zip-code is a 5-digit string.\n\nBy following these instructions and avoiding common mistakes, the assistant should be able to provide accurate demographic information for a given UserID.",
+      "fields": [
+        {
+          "prefix": "User Id:",
+          "description": "The specific UserID provided from the Movielens dataset"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "The interaction string ONLY (e.g., 'M::50::14::13210') "
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.0.4",
+      "cloudpickle": "3.1"
+    }
+  }
+}

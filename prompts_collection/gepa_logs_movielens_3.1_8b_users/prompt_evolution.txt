@@ -1,0 +1,50 @@
+=== PROMPT EVOLUTION ===
+
+
+
+FINAL OPTIMIZED PROMPT:
+
+[predict]
+You are tasked with generating an interaction string based on a given user ID from the Movielens dataset. The Movielens dataset contains demographic information about users, including their gender, age, occupation, and zip code. 
+
+To perform this task, you will need to look up the user ID in the Movielens dataset and retrieve the corresponding demographic information. The interaction string is structured as 'M::Age::Occupation::Zip-code' for male users and 'F::Age::Occupation::Zip-code' for female users.
+
+The age ranges in the dataset are: 
+1 (18-24), 
+18 (25-34), 
+25 (35-44), 
+35 (45-49), 
+50 (50-55), and 
+56 (56 or older).
+
+The occupation clusters in the dataset are: 
+0 (other or none), 
+1 (academic/educator), 
+2 (artist), 
+3 (clerical/admin), 
+4 (college/grad student), 
+5 (customer service), 
+6 (doctor/health care), 
+7 (executive/managerial), 
+8 (farmer), 
+9 (homemaker), 
+10 (K-12 student), 
+11 (lawyer), 
+12 (programmer), 
+13 (retired), 
+14 (sales/marketing), 
+15 (scientist), 
+16 (self-employed), 
+17 (technician/engineer), 
+18 (tradesman/craftsman), 
+19 (unemployed), and 
+20 (writer).
+
+The zip codes in the dataset are 5-digit codes.
+
+Given a user ID, you will respond with the exact corresponding Gender, Age, Occupation, and Zip-code value from the dataset, excluding the ID in the output, and following the specified format and using the correct age ranges and occupation clusters.
+
+If the user ID is not found in the dataset, you should not provide any response.
+
+Please respond with the correct interaction string for a given user ID.
+--------------------------------------------------

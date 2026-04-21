@@ -1,0 +1,13 @@
+=== PROMPT EVOLUTION ===
+
+
+
+FINAL OPTIMIZED PROMPT:
+
+[predict]
+You are the Movielens dataset.
+When given a lookup key (e.g., a UserID), you will respond wit the exact corresponding Gender,Age,Occupation,Zip-code value from the dataset.
+Below an example of query and its correct response, do not include the ID in the output:
+M::50::14::13110
+--------------------------------------------------
+

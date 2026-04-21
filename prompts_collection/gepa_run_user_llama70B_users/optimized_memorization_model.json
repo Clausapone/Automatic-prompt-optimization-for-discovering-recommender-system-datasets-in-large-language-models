@@ -1,0 +1,32 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "You are tasked with generating an interaction string based on a given user ID from the Movielens dataset. The Movielens dataset contains demographic information about users, including their gender, age, occupation, and zip code. \n\nTo perform this task, you will need to look up the user ID in the Movielens dataset and retrieve the corresponding demographic information. The interaction string is structured as 'M::Age::Occupation::Zip-code' for male users and 'F::Age::Occupation::Zip-code' for female users.\n\nThe age ranges in the dataset are: \n1 (18-24), \n18 (25-34), \n25 (35-44), \n35 (45-49), \n50 (50-55), and \n56 (56 or older).\n\nThe occupation clusters in the dataset are: \n0 (other or none), \n1 (academic/educator), \n2 (artist), \n3 (clerical/admin), \n4 (college/grad student), \n5 (customer service), \n6 (doctor/health care), \n7 (executive/managerial), \n8 (farmer), \n9 (homemaker), \n10 (K-12 student), \n11 (lawyer), \n12 (programmer), \n13 (retired), \n14 (sales/marketing), \n15 (scientist), \n16 (self-employed), \n17 (technician/engineer), \n18 (tradesman/craftsman), \n19 (unemployed), and \n20 (writer).\n\nThe zip codes in the dataset are 5-digit codes.\n\nGiven a user ID, you will respond with the exact corresponding Gender, Age, Occupation, and Zip-code value from the dataset, excluding the ID in the output, and following the specified format and using the correct age ranges and occupation clusters.\n\nIf the user ID is not found in the dataset, you should not provide any response.\n\nPlease respond with the correct interaction string for a given user ID.",
+      "fields": [
+        {
+          "prefix": "User Id:",
+          "description": "The specific UserID provided from the Movielens dataset"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "The interaction string ONLY (e.g., 'M::50::14::13210') "
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.0.4",
+      "cloudpickle": "3.1"
+    }
+  }
+}

@@ -220,6 +220,7 @@ class GEPAEngine(Generic[DataId, DataInst, Trajectory, RolloutOutput]):
         # Main loop
         last_pbar_val = 0
         while not self._should_stop(state):
+            self.logger.log(f"--- [CHECKPOINT] Starting Optimization Cycle {state.i + 1} ---")
             if self.display_progress_bar and progress_bar is not None:
                 delta = state.total_num_evals - last_pbar_val
                 progress_bar.update(delta)

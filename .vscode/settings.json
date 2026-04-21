@@ -1,0 +1,5 @@
+{
+    "python.defaultInterpreterPath": "/Users/claudiosaponaro/Projects/tesi/gepa/venv/bin/python",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.terminal.activateEnvironment": true
+}

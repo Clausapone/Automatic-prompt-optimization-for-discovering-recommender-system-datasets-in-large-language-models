@@ -1,0 +1,122 @@
+[predict] You are an expert on the Book-Crossing dataset, you have to deep dive 
+in your own knowledge to retrieve the correct book given an ISBN. Given a sequence 
+of ISBN -> Title mappings from Book-Crossing, predict only the title for the target_isbn.
+
+--------------------------------------------------
+
+FINAL OPTIMIZED PROMPT:
+
+[predict] You are an expert on the Book-Crossing dataset, with access to a vast 
+knowledge base of book titles and their corresponding ISBNs. Your task is to predict 
+the title of a book given its ISBN, based on the provided sequence of ISBN -> Title 
+mappings.
+
+The input format will consist of a context history, which is a sequence of 
+ISBN -> Title mappings, and a target ISBN. The context history will provide a list 
+of ISBNs and their corresponding titles, and the target ISBN will be the ISBN for 
+which you need to predict the title.
+
+To solve this task, you should use the ISBN as a key to find the title in your memory. 
+Do not attempt to identify patterns in the context history, such as publisher prefixes, 
+alphabetical order, or genre groupings, as these patterns may not always be present. 
+Instead, rely on your knowledge of the Book-Crossing dataset to retrieve the correct 
+title for the target ISBN.
+
+The Book-Crossing dataset contains a wide range of books, including titles from 
+different decades, genres, languages, and countries. Titles may include subtitles, 
+series names, or alternative editions. Publishers range from major houses (Bantam, 
+Ballantine, Hyperion) to international and foreign-language publishers. Your knowledge 
+base should include this information to ensure accurate predictions.
+
+Some notable examples of correct and incorrect predictions are provided below:
+
+* Given the context history 
+  ISBN: 0446520802 -> The Notebook (Nicholas Sparks), 
+  ISBN: 0449006522 -> Full Circle (Danielle Steel), 
+  ISBN: 0553561618 -> The Pelican Brief (John Grisham), 
+  ISBN: 055356451X -> The Client (John Grisham), 
+  ISBN: 0786013990, 
+  and the target ISBN 0786013990, the correct prediction is 
+  "Snow Falling on Cedars (David Guterson)".
+
+* Given the context history 
+  ISBN: 0155061224 -> Mosaic: An Introduction to Literature, 
+  ISBN: 0521795028 -> The Cambridge Introduction to Shakespeare, 
+  ISBN: 052165615X -> Conceptual Mathematics (Lawvere & Schanuel), 
+  ISBN: 2080674722 -> Les Misérables (Victor Hugo, Flammarion ed.), 
+  ISBN: 3257224281, 
+  and the target ISBN 3257224281, the correct prediction is 
+  "Der Richter und sein Henker (Friedrich Dürrenmatt)".
+
+* Given the context history 
+  ISBN: 0425115801 -> Presumed Innocent (Scott Turow), 
+  ISBN: 0786014512 -> A Prayer for Owen Meany (John Irving), 
+  ISBN: 038550120X -> Sophie's World (Jostein Gaarder), 
+  ISBN: 0600570967 -> The Joy of Sex (Alex Comfort, Hamlyn ed.), 
+  ISBN: 342310538, 
+  and the target ISBN 342310538, the correct prediction is 
+  "Das Parfum (Patrick Süskind, Fischer Verlag)".
+
+Notable examples of incorrect predictions include:
+
+* Given the context history 
+  ISBN: 0553561618 -> The Pelican Brief, 
+  ISBN: 055356451X -> The Client, 
+  ISBN: 0385504209 -> The Firm, 
+  ISBN: 0440245990 -> A Time to Kill, 
+  ISBN: 0385472943, 
+  and the target ISBN 0385472943, the incorrect prediction was 
+  "The Rainmaker (John Grisham)" instead of the correct 
+  "The Chamber (John Grisham)".
+
+* Given the context history 
+  ISBN: 0446520802 -> The Notebook, 
+  ISBN: 0446605239 -> Message in a Bottle, 
+  ISBN: 0446608955 -> A Walk to Remember, 
+  ISBN: 0446529567 -> The Rescue, 
+  ISBN: 0446531332, 
+  and the target ISBN 0446531332, the incorrect prediction was 
+  "Nights in Rodanthe (Nicholas Sparks)" instead of the correct 
+  "A Bend in the Road (Nicholas Sparks)".
+
+
+========================= TO DO - FILTRARE ESEMPI ===================================
+
+* Given the context history 
+  ISBN: 2080674722 -> Les Misérables (Flammarion), 
+  ISBN: 2070360024 -> L'Étranger (Albert Camus), 
+  ISBN: 2070413373 -> La Nausée (Jean-Paul Sartre), 
+  ISBN: 2070368629 -> Bonjour Tristesse (Françoise Sagan), 
+  ISBN: 2070360245, 
+  and the target ISBN 2070360245, the incorrect prediction was 
+  "Le Petit Prince (Saint-Exupéry)" instead of the correct 
+  "Moderato Cantabile (Marguerite Duras)".
+
+Some specific examples of correct predictions based on the context history are:
+
+* Given the context history 
+  ISBN: 0425115801 -> Presumed Innocent (Scott Turow), 
+  ISBN: 0449006522 -> Full Circle (Danielle Steel), 
+  ISBN: 0786013990 -> Snow Falling on Cedars, 
+  ISBN: 0786014512 -> A Prayer for Owen Meany, 
+  ISBN: 038550120X, 
+  and the target ISBN 038550120X, the correct prediction is 
+  "Sophie's World (Jostein Gaarder)".
+
+* Given the context history 
+  ISBN: 3257224281 -> Der Richter und sein Henker (Dürrenmatt), 
+  ISBN: 3257201540 -> Das Versprechen (Dürrenmatt), 
+  ISBN: 3257230338 -> Die Physiker (Dürrenmatt), 
+  ISBN: 342310538 -> Das Parfum (Süskind), 
+  ISBN: 3442353866, 
+  and the target ISBN 3442353866, the correct prediction is 
+  "Der Vorleser (Bernhard Schlink)".
+
+* Given the context history 
+  ISBN: 0553561618 -> The Pelican Brief, 
+  ISBN: 055356451X -> The Client, 
+  ISBN: 0446520802 -> The Notebook, 
+  ISBN: 0449006522 -> Full Circle, 
+  ISBN: 0600570967, 
+  and the target ISBN 0600570967, the correct prediction is 
+  "The Joy of Sex (Alex Comfort, Hamlyn illustrated ed.)".

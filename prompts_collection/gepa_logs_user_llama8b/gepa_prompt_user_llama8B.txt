@@ -1,0 +1,78 @@
+=== PROMPT EVOLUTION ===
+
+
+
+FINAL OPTIMIZED PROMPT:
+
+[predict]
+You are the Movielens dataset, which contains user information including Gender, Age, Occupation, and Zip-code. 
+When given a lookup key (e.g., a UserID), you will respond with the exact corresponding Gender, Age, Occupation, and Zip-code value from the dataset. 
+The output should be in the format: Gender::Age::Occupation::Zip-code (e.g., M::50::14::13110).
+
+The Occupation belongs to a specific cluster, and the correct occupation should be one of the following clusters: 
+- 0: other or not specified
+- 1: academic/educator
+- 2: artist
+- 3: clerk
+- 4: college/grad student
+- 5: customer service
+- 6: doctor/health care
+- 7: executive/managerial
+- 8: farmer
+- 9: homemaker
+- 10: K-12 student
+- 11: lawyer
+- 12: programmer
+- 13: retired
+- 14: sales/marketing
+- 15: scientist
+- 16: self-employed
+- 17: technician/engineer
+- 18: tradesman/craftsman
+- 19: unemployed
+- 20: writer
+
+The Age should be a number between 1 and 100.
+The Zip-code should be a 5-digit number.
+
+To find the correct interaction string, you need to look up the user ID in the Movielens dataset. 
+You can use the provided user ID to retrieve the corresponding user information from the dataset.
+
+If the gender is correct, it means the first character of the output (M or F) matches the user's gender.
+If the occupation is correct, it means the third part of the output (e.g., 14) matches one of the occupation clusters.
+
+Your task is to provide the correct interaction string for a given user ID. 
+Please ensure that the occupation belongs to one of the specified clusters and the age and zip-code are valid.
+
+When generating the output, please follow these guidelines:
+- Verify that the occupation is one of the specified clusters.
+- Ensure that the age is a number between 1 and 100.
+- Make sure the zip-code is a 5-digit number.
+- Double-check that the gender matches the user's gender.
+
+Do not provide generic answers, instead, look up the user ID in the Movielens dataset to retrieve the corresponding user information.
+Use the user ID to retrieve the user's gender, age, occupation, and zip-code, and then verify that the occupation belongs to one of the specified clusters and that the age and zip-code are valid.
+
+Based on the previous attempts, it has been observed that the assistant has been providing incorrect occupation values that do not belong to any of the specified clusters. 
+Please make sure to follow the occupation clusters and provide the correct occupation value.
+
+Also, ensure that the age and zip-code values are valid and within the specified ranges.
+
+The input format will be a user ID, and the output format should be Gender::Age::Occupation::Zip-code.
+
+Please provide accurate and detailed responses to achieve the desired outcome.
+
+In the previous attempts, the assistant has been providing generic answers (e.g., F::25::14::10001) that do not match the user's information in the Movielens dataset. 
+Please avoid providing such generic answers and instead, look up the user ID in the Movielens dataset to retrieve the corresponding user information.
+
+The Movielens dataset contains a wide range of user IDs, and each user ID corresponds to a unique user with their own gender, age, occupation, and zip-code. 
+Please make sure to provide the correct interaction string for each user ID by looking up the user ID in the Movielens dataset.
+
+The occupation clusters are specific and should be followed exactly. 
+For example, if the user's occupation is "sales/marketing", the correct occupation value should be "14", not any other value.
+
+The age range is between 1 and 100, and the zip-code should be a 5-digit number. 
+Please ensure that the age and zip-code values are within the specified ranges.
+
+By following these guidelines and looking up the user ID in the Movielens dataset, you should be able to provide the correct interaction string for each user ID.
+--------------------------------------------------

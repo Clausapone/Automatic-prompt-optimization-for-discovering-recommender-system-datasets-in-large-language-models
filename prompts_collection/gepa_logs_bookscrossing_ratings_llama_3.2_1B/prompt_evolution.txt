@@ -1,0 +1,133 @@
+[predict] You are an expert on the Book-Crossing dataset, you have to deep dive 
+in your own knowledge to retrieve the correct ISBN given a user_id. Given a sequence 
+of user_id -> ISBN mappings from Book-Crossing, predict only the ISBN for the 
+target_user_id.
+
+--------------------------------------------------
+
+FINAL OPTIMIZED PROMPT:
+
+[predict] You are an expert on the Book-Crossing dataset, with access to a vast 
+knowledge base of user reading histories and their corresponding ISBNs. Your task 
+is to predict the next ISBN a user is likely to have interacted with, given a 
+provided sequence of user_id -> ISBN mappings.
+
+The input format will consist of a context history, which is a sequence of 
+user_id -> ISBN mappings, and a target user_id. The context history will provide 
+a list of user_ids and their corresponding ISBNs, and the target user_id will be 
+the user for which you need to predict the most likely ISBN.
+
+To solve this task, you should use the user_id as a key to find the associated 
+ISBN in your memory. Do not attempt to identify patterns in the context history, 
+such as sequential user_id ordering, geographic clustering, or rating-based 
+groupings, as these patterns may not always be present. Instead, rely on your 
+knowledge of the Book-Crossing dataset to retrieve the correct ISBN for the 
+target user_id.
+
+The Book-Crossing dataset contains a wide range of users from different countries, 
+age groups, and reading preferences. Each user may be associated with one or 
+multiple ISBNs reflecting their reading history. Some users have rated books 
+explicitly (scale 1-10), while others have implicit interactions (rating 0). 
+ISBNs span genres from literary fiction to self-help, from foreign-language 
+editions to English bestsellers. Your knowledge base should include this 
+information to ensure accurate predictions.
+
+Some notable examples of correct and incorrect predictions are provided below:
+
+* Given the context history
+  user_id: 76726 -> ISBN: 0155061224,
+  user_id: 276727 -> ISBN: 0446520802,
+  user_id: 276729 -> ISBN: 052165615X,
+  user_id: 276733 -> ISBN: 2080674722,
+  user_id: 276736,
+  and the target user_id 276736, the correct prediction is
+  "ISBN: 3257224281".
+
+* Given the context history
+  user_id: 276737 -> ISBN: 0600570967,
+  user_id: 276744 -> ISBN: 038550120X,
+  user_id: 276745 -> ISBN: 342310538,
+  user_id: 276746 -> ISBN: 0425115801,
+  user_id: 276747,
+  and the target user_id 276747, the correct prediction is
+  "ISBN: 0449224964".
+
+* Given the context history
+  user_id: 276729 -> ISBN: 052165615X,
+  user_id: 276729 -> ISBN: 0521795028,
+  user_id: 276746 -> ISBN: 0449006522,
+  user_id: 276746 -> ISBN: 0553561618,
+  user_id: 276746,
+  and the target user_id 276746, the correct prediction is
+  "ISBN: 055356451X"
+  (note: a single user_id can map to multiple ISBNs reflecting 
+  a full reading history).
+
+Notable examples of incorrect predictions include:
+
+* Given the context history
+  user_id: 276746 -> ISBN: 0425115801,
+  user_id: 276746 -> ISBN: 0449006522,
+  user_id: 276746 -> ISBN: 0553561618,
+  user_id: 276746 -> ISBN: 055356451X,
+  user_id: 276746,
+  and the target user_id 276746, the incorrect prediction was
+  "ISBN: 0786013990" instead of the correct
+  "ISBN: 0786014512"
+  (note: confusing two Hyperion-published titles associated 
+  with the same user).
+
+* Given the context history
+  user_id: 276727 -> ISBN: 0446520802,
+  user_id: 276729 -> ISBN: 052165615X,
+  user_id: 276729 -> ISBN: 0521795028,
+  user_id: 276733 -> ISBN: 2080674722,
+  user_id: 276733,
+  and the target user_id 276733, the incorrect prediction was
+  "ISBN: 2070360024" instead of the correct
+  "ISBN: 2080674722"
+  (note: confusing two French-language editions from different 
+  publishers — Gallimard vs Flammarion).
+
+* Given the context history
+  user_id: 276744 -> ISBN: 038550120X,
+  user_id: 276745 -> ISBN: 342310538,
+  user_id: 276746 -> ISBN: 0425115801,
+  user_id: 276746 -> ISBN: 0786013990,
+  user_id: 276737,
+  and the target user_id 276737, the incorrect prediction was
+  "ISBN: 0385504209" instead of the correct
+  "ISBN: 0600570967"
+  (note: incorrectly inferring a Doubleday ISBN from neighboring 
+  user context rather than recalling the correct Hamlyn edition).
+
+Some specific examples of correct predictions based on the context history are:
+
+* Given the context history
+  user_id: 276745 -> ISBN: 342310538,
+  user_id: 276746 -> ISBN: 0425115801,
+  user_id: 276746 -> ISBN: 0449006522,
+  user_id: 276746 -> ISBN: 0553561618,
+  user_id: 276744,
+  and the target user_id 276744, the correct prediction is
+  "ISBN: 038550120X".
+
+* Given the context history
+  user_id: 76726 -> ISBN: 0155061224,
+  user_id: 276727 -> ISBN: 0446520802,
+  user_id: 276729 -> ISBN: 052165615X,
+  user_id: 276729 -> ISBN: 0521795028,
+  user_id: 276745,
+  and the target user_id 276745, the correct prediction is
+  "ISBN: 342310538".
+
+* Given the context history
+  user_id: 276746 -> ISBN: 0786013990,
+  user_id: 276746 -> ISBN: 0786014512,
+  user_id: 276744 -> ISBN: 038550120X,
+  user_id: 276745 -> ISBN: 342310538,
+  user_id: 276729,
+  and the target user_id 276729, the correct prediction is
+  "ISBN: 0521795028"
+  (note: user 276729 is associated with academic/Cambridge 
+  University Press titles, making this a consistent retrieval).

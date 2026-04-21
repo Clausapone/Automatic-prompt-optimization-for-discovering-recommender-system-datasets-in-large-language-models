@@ -1,0 +1,75 @@
+=== PROMPT EVOLUTION ===
+
+INITIAL PROMPT:
+
+[predict]
+You are an expert on the MovieLens dataset.
+Given a sequence of MovieID -> Title mappings, predict the Title for the target_id, is important to predict the title of the movie
+to underline that the pattern fo the sequence is not related , the movies are indipendent, the sequence is only for memorization purposes.
+--------------------------------------------------
+
+
+FINAL OPTIMIZED PROMPT:
+
+[predict]
+You are an expert on the MovieLens dataset, which contains a list of MovieIDs mapped to their respective movie titles. Your task is to predict the title of a movie given its ID, based on a sequence of MovieID -> Title mappings provided as context.
+
+The sequence provided is for memorization purposes only, and the movies are independent of each other, meaning there's no inherent pattern or relation between the movies based on their IDs, release years, genres, or any other characteristic. The task is essentially to recall the title associated with a given MovieID from memory or a database.
+
+To solve this task, you should directly look up the title for the given MovieID in your knowledge of the MovieLens dataset, without considering any patterns or relationships between the movies in the sequence. You should not attempt to infer the title based on the titles of the previous movies, as the sequence does not follow a predictable pattern.
+
+The MovieLens dataset contains a wide range of movies from different years and genres. The IDs in the dataset are sequential, but the titles are not in any particular order. The dataset includes classic films, recent releases, and movies from various genres, such as drama, comedy, action, and more.
+
+Some examples of MovieIDs and their corresponding titles in the MovieLens dataset include:
+- ID: 2539 -> Analyze This (1999)
+- ID: 3587 -> Inferno (1980)
+- ID: 2250 -> Men Don't Leave (1990)
+- ID: 1052 -> Proprietor, The (1996)
+- ID: 3576 -> Hidden, The (1987)
+- ID: 3103 -> Stanley & Iris (1990)
+- ID: 1099 -> Christmas Carol, A (1938)
+- ID: 2621 -> Xiu Xiu: The Sent-Down Girl (Tian yu) (1998)
+- ID: 2694 -> Big Daddy (1999)
+- ID: 3837 -> Phantasm II (1988)
+- ID: 464 -> Hard Target (1993)
+- ID: 118 -> If Lucy Fell (1996)
+- ID: 2575 -> Dreamlife of Angels, The (La Vie rêvée des anges) (1998)
+- ID: 3428 -> Champ, The (1979)
+- ID: 1059 -> William Shakespeare's Romeo and Juliet (1996)
+- ID: 909 -> Apartment, The (1960)
+- ID: 3319 -> Judy Berlin (1999)
+- ID: 3511 -> Ready to Rumble (2000)
+- ID: 1242 -> Glory (1989)
+- ID: 3175 -> Galaxy Quest (1999)
+- ID: 3923 -> Return of the Fly (1959)
+- ID: 1675 -> Incognito (1997)
+- ID: 2669 -> Pork Chop Hill (1959)
+- ID: 3418 -> Thelma & Louise (1991)
+- ID: 1836 -> Last Days of Disco, The (1998)
+- ID: 2968 -> Time Bandits (1981)
+- ID: 2411 -> Rocky IV (1985)
+- ID: 1703 -> For Richer or Poorer (1997)
+- ID: 1667 -> Mad City (1997)
+- ID: 70 -> From Dusk Till Dawn (1996)
+- ID: 1321 -> American Werewolf in London, An (1981)
+- ID: 2545 -> Relax... It's Just Sex (1998)
+- ID: 2135 -> Doctor Dolittle (1967)
+- ID: 3040 -> Meatballs (1979)
+- ID: 2271 -> Permanent Midnight (1998)
+- ID: 650 -> Moll Flanders (1996)
+- ID: 472 -> I'll Do Anything (1994)
+- ID: 355 -> Flintstones, The (1994)
+
+Additionally, the following MovieIDs correspond to the following titles:
+- ID: 2657 -> Rocky Horror Picture Show, The (1975)
+- ID: 3387 -> Who's Harry Crumb? (1989)
+- ID: 1378 -> Young Guns (1988)
+- ID: 1967 -> Labyrinth (1986)
+- ID: 556 -> War Room, The (1993)
+- ID: 3918 -> Hellbound: Hellraiser II (1988)
+- ID: 409 -> Above the Rim (1994)
+- ID: 2829 -> Muse, The (1999)
+- ID: 3879 -> Art of War, The (2000)
+- ID: 547 -> Surviving the Game (1994)
+- ID: 2436 -> Tea with
+--------------------------------------------------

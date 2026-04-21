@@ -1,0 +1,276 @@
+REPLACEMENTS_START
+---Chunk 238265-238275---
+ORIGINAL_START
+237905,0136538258::The Art of Reasoning,0136538258::Society: The Basics,1
+237906,1563411342::The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change,"1563411342::Dish It Up, Baby",1
+237907,1572592087::The Complete Book of Knots,1572592087::Psychology 5th Edition Study Guide,1
+237908,0385237995::The Art of Possibility,0385237995::Sandscreen,1
+237909,0440203198::The Complete Book of the British Army,0440203198::The Messianic Legacy,1
+237910,0789513005::The Complete Book of Witchcraft,0789513005::Discovering Computers -  A Link to the Future World Wide Web Enhanced Brief Edition,1
+237911,0306806177::The Oxford Book of English Verse,"0306806177::Battles of the Revolutionary War, 1775-1781 (Major Battles and Campaigns ; 3)",1
+237912,0132539071::The New American History,0132539071::Psychology,1
+237913,0740718479::The Art of Possibility,0740718479::The Revolt Of The English Majors:  A Doonesbury Book,1
+237914,0060160268::The Complete Book of the American President,0060160268::Three Hundred Sixty-Five Quick and Easy Microwave Recipes,1
+237915,0671675621::The Art of Possibility,0671675621::Patriots,1
+ORIGINAL_END
+REPLACEMENT_START
+237905,0136538258::Society: The Basics,0136538258::Society: The Basics,0
+237906,"1563411342::Dish It Up, Baby","1563411342::Dish It Up, Baby",0
+237907,1572592087::Psychology 5th Edition Study Guide,1572592087::Psychology 5th Edition Study Guide,0
+237908,0385237995::Sandscreen,0385237995::Sandscreen,0
+237909,0440203198::The Messianic Legacy,0440203198::The Messianic Legacy,0
+237910,0789513005::Discovering Computers -  A Link to the Future World Wide Web Enhanced Brief Edition,0789513005::Discovering Computers -  A Link to the Future World Wide Web Enhanced Brief Edition,0
+237911,"0306806177::Battles of the Revolutionary War, 1775-1781 (Major Battles and Campaigns ; 3)","0306806177::Battles of the Revolutionary War, 1775-1781 (Major Battles and Campaigns ; 3)",0
+237912,0132539071::Psychology,0132539071::Psychology,0
+237913,0740718479::The Revolt Of The English Majors:  A Doonesbury Book,0740718479::The Revolt Of The English Majors:  A Doonesbury Book,0
+237914,0060160268::Three Hundred Sixty-Five Quick and Easy Microwave Recipes,0060160268::Three Hundred Sixty-Five Quick and Easy Microwave Recipes,0
+237915,0671675621::Patriots,0671675621::Patriots,0
+REPLACEMENT_END
+---Chunk 238326-238353---
+ORIGINAL_START
+237966,0060380225::The Art of the Possible,0060380225::War in Space,1
+237967,0822100126::The Economics of Uncertainty,0822100126::The wrought response;: Reading and writing about literature,1
+237968,0470201800::The Oxford Handbook of Engineering and Technology in the Classical World,0470201800::Besant Manufacture 3e C (Ellis Horwood series in mechanical engineering),1
+237969,0070107033::The Spy Who Loved Me,0070107033::Introduction to Optical Fibers (McGraw-Hill Series in Electrical Enginee),1
+237970,0026099802::The Art of Computer Programming,0026099802::Devil at the reins,1
+237971,031226738X::The 39 Clues: Cahills vs. Vespers,"031226738X::From a Wooden Canoe: Reflections on Canoeing, Camping, and Classic Equipment",1
+237972,0140279806::The New American Humor,0140279806::Poe's Cat,1
+237973,0831758392::The Art of the Fugue,0831758392::Lily Beach-21.00,1
+237974,0380765225::The Art of Possibility,0380765225::G Is for Ecogarden: An A to Z Guide to a More Organically Healthy Garden,1
+237975,0823084892::The Oxford Handbook of Engineering and Technology in the Classical World,0823084892::Women on Top: The Quiet Revolution That's Rocking the American Music Industry,1
+237976,0312800630::The 1990s: A Cultural History,0312800630::This splendid earth,1
+237977,0670814806::The Art of Possibility,0670814806::Napoleon and Hitler: A Comparative Study,1
+237978,0671001922::The New England Patriots,0671001922::SPELL OF THE SCREAMING JOKERS GHOSTS OF FEAR STRE,1
+237979,0671025139::The 7 Habits of Highly Effective People,0671025139::Depth Charge: The Journey of Allen Strange #5: Nickelodeon (Journey of Allen Strange),1
+237980,0590635344::The 7 1/2 Deaths of Evelyn Hardcastle,0590635344::Julie's Wolf Pack,1
+237981,0373123957::The Art of the Personal Essay,0373123957::The Millionaire's Marriage Demand (Harlequin Presents),1
+237982,0373712030::The Black Stallion,0373712030::For A Baby (Harlequin Superromance),1
+237983,0671877747::The 7th Man,"0671877747::CONVERGENCE (\""Heritage Universe\"" Series)",1
+237984,0373037953::The Man Who Loved Women,0373037953::Rafael's Convenient Proposal (Harlequin Romance),1
+237985,0373217471::The Boss's Secret (Harlequin Presents),0373217471::Shotgun Vows (Continuities Plus),1
+237986,0373513003::The Boss's Baby,0373513003::The Right Kind Of Girl (Reader's Choice),1
+237987,0373273630::The Boss's Baby,0373273630::Joint Forces (Silhouette Intimate Moments),1
+237988,037322768X::The Boss's Baby,037322768X::Agent Cowboy (Harlequin Intrigue Series),1
+237989,0380496194::The Black Stallion,0380496194::Halloween,1
+237990,0373292953::The Boss's Baby,"0373292953::Rocky Mountain Marriage (Harlequin Historical, No. 695)",1
+237991,0373123825::The Boss's Baby,"0373123825::The Unwilling Mistress (Harlequin Presents, 2382)",1
+237992,0373123809::The Marriage Bond,"0373123809::His Boardroom Mistress (Harlequin Presents, 2380)",1
+237993,0425044394::The Black Cat,0425044394::East Wind Coming,1
+ORIGINAL_END
+REPLACEMENT_START
+237966,0060380225::War in Space,0060380225::War in Space,0
+237967,0822100126::The wrought response;: Reading and writing about literature,0822100126::The wrought response;: Reading and writing about literature,0
+237968,0470201800::Besant Manufacture 3e C (Ellis Horwood series in mechanical engineering),0470201800::Besant Manufacture 3e C (Ellis Horwood series in mechanical engineering),0
+237969,0070107033::Introduction to Optical Fibers (McGraw-Hill Series in Electrical Enginee),0070107033::Introduction to Optical Fibers (McGraw-Hill Series in Electrical Enginee),0
+237970,0026099802::Devil at the reins,0026099802::Devil at the reins,0
+237971,"031226738X::From a Wooden Canoe: Reflections on Canoeing, Camping, and Classic Equipment","031226738X::From a Wooden Canoe: Reflections on Canoeing, Camping, and Classic Equipment",0
+237972,0140279806::Poe's Cat,0140279806::Poe's Cat,0
+237973,0831758392::Lily Beach-21.00,0831758392::Lily Beach-21.00,0
+237974,0380765225::G Is for Ecogarden: An A to Z Guide to a More Organically Healthy Garden,0380765225::G Is for Ecogarden: An A to Z Guide to a More Organically Healthy Garden,0
+237975,0823084892::Women on Top: The Quiet Revolution That's Rocking the American Music Industry,0823084892::Women on Top: The Quiet Revolution That's Rocking the American Music Industry,0
+237976,0312800630::This splendid earth,0312800630::This splendid earth,0
+237977,0670814806::Napoleon and Hitler: A Comparative Study,0670814806::Napoleon and Hitler: A Comparative Study,0
+237978,0671001922::SPELL OF THE SCREAMING JOKERS GHOSTS OF FEAR STRE,0671001922::SPELL OF THE SCREAMING JOKERS GHOSTS OF FEAR STRE,0
+237979,0671025139::Depth Charge: The Journey of Allen Strange #5: Nickelodeon (Journey of Allen Strange),0671025139::Depth Charge: The Journey of Allen Strange #5: Nickelodeon (Journey of Allen Strange),0
+237980,0590635344::Julie's Wolf Pack,0590635344::Julie's Wolf Pack,0
+237981,0373123957::The Millionaire's Marriage Demand (Harlequin Presents),0373123957::The Millionaire's Marriage Demand (Harlequin Presents),0
+237982,0373712030::For A Baby (Harlequin Superromance),0373712030::For A Baby (Harlequin Superromance),0
+237983,"0671877747::CONVERGENCE (\""Heritage Universe\"" Series)","0671877747::CONVERGENCE (\""Heritage Universe\"" Series)",0
+237984,0373037953::Rafael's Convenient Proposal (Harlequin Romance),0373037953::Rafael's Convenient Proposal (Harlequin Romance),0
+237985,0373217471::Shotgun Vows (Continuities Plus),0373217471::Shotgun Vows (Continuities Plus),0
+237986,0373513003::The Right Kind Of Girl (Reader's Choice),0373513003::The Right Kind Of Girl (Reader's Choice),0
+237987,0373273630::Joint Forces (Silhouette Intimate Moments),0373273630::Joint Forces (Silhouette Intimate Moments),0
+237988,037322768X::Agent Cowboy (Harlequin Intrigue Series),037322768X::Agent Cowboy (Harlequin Intrigue Series),0
+237989,0380496194::Halloween,0380496194::Halloween,0
+237990,"0373292953::Rocky Mountain Marriage (Harlequin Historical, No. 695)","0373292953::Rocky Mountain Marriage (Harlequin Historical, No. 695)",0
+237991,"0373123825::The Unwilling Mistress (Harlequin Presents, 2382)","0373123825::The Unwilling Mistress (Harlequin Presents, 2382)",0
+237992,"0373123809::His Boardroom Mistress (Harlequin Presents, 2380)","0373123809::His Boardroom Mistress (Harlequin Presents, 2380)",0
+237993,0425044394::East Wind Coming,0425044394::East Wind Coming,0
+REPLACEMENT_END
+---Chunk 238599-238602---
+ORIGINAL_START
+238239,1559703571::The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change,1559703571::Are We Not Men ?,1
+238240,0452268338::The Man Who Was Thursday: A Nightmare,0452268338::Organizing Your Home Office for Success: Expert Strategies That Can Work for You,1
+238241,0446769827::The Art of Possibility: Transforming Professional and Personal Life,0446769827::Sherlock Holmes's War of the Worlds,1
+238242,0671869035::The New York Times Book of the Dead,0671869035::The NEW JACOBY AND MEYERS PRACTICAL GUIDE TO EVERYDAY LAW,1
+ORIGINAL_END
+REPLACEMENT_START
+238239,1559703571::Are We Not Men ?,1559703571::Are We Not Men ?,0
+238240,0452268338::Organizing Your Home Office for Success: Expert Strategies That Can Work for You,0452268338::Organizing Your Home Office for Success: Expert Strategies That Can Work for You,0
+238241,0446769827::Sherlock Holmes's War of the Worlds,0446769827::Sherlock Holmes's War of the Worlds,0
+238242,0671869035::The NEW JACOBY AND MEYERS PRACTICAL GUIDE TO EVERYDAY LAW,0671869035::The NEW JACOBY AND MEYERS PRACTICAL GUIDE TO EVERYDAY LAW,0
+REPLACEMENT_END
+---Chunk 239167-239173---
+ORIGINAL_START
+238807,0002157446::The Black Cauldron,0002157446::The valour and the horror: The untold story of Canadians in the Second World War,1
+238808,0881841641::The Art of Fielding,0881841641::The Maurizius Case,1
+238809,0740733052::The Art of Fielding,0740733052::I Want To Be The Kitty : Mutts 8,1
+238810,0886774357::The Complete Book of the Dead Sea Scrolls,"0886774357::Stone of Farewell (Memory, Sorrow, and Thorn, Book 2)",1
+238811,0752847201::The 7th Man,0752847201::Blitzed: The Autobiography of Steve Strange,1
+238812,0352333065::The 7th Man,0352333065::Forbidden Fruit (Black Lace Series),1
+238813,0881843008::The Black Cauldron,0881843008::The Court of Venus,1
+ORIGINAL_END
+REPLACEMENT_START
+238807,0002157446::The valour and the horror: The untold story of Canadians in the Second World War,0002157446::The valour and the horror: The untold story of Canadians in the Second World War,0
+238808,0881841641::The Maurizius Case,0881841641::The Maurizius Case,0
+238809,0740733052::I Want To Be The Kitty : Mutts 8,0740733052::I Want To Be The Kitty : Mutts 8,0
+238810,"0886774357::Stone of Farewell (Memory, Sorrow, and Thorn, Book 2)","0886774357::Stone of Farewell (Memory, Sorrow, and Thorn, Book 2)",0
+238811,0752847201::Blitzed: The Autobiography of Steve Strange,0752847201::Blitzed: The Autobiography of Steve Strange,0
+238812,0352333065::Forbidden Fruit (Black Lace Series),0352333065::Forbidden Fruit (Black Lace Series),0
+238813,0881843008::The Court of Venus,0881843008::The Court of Venus,0
+REPLACEMENT_END
+---Chunk 240298-240304---
+ORIGINAL_START
+239938,0451627229::The Man Who Was Thursday,0451627229::Points of View an Anthology of Short Sto,1
+239939,0671631888::The Art of the Personal Essay,0671631888::MONKEYS,1
+239940,0140113118::The Black Book,0140113118::Freelance Death (Penguin Crime Fiction),1
+239941,0385272022::The Black Stallion,"0385272022::Miracles, a Parascientific Inquiry into Wondrous Phenomena",1
+239942,0452257565::The Man Who Was Thursday,"0452257565::O, how the wheel becomes it!: A novel",1
+239943,087338668X::The New American Humor,087338668X::I'Ve Seen the Elephant: An Autobiography,1
+239944,8401474523::The Art of Possibility,"8401474523::El Resplandor/the Shining (Nevedomoe, Neobiasnimoe, Neveroitnoe)",1
+ORIGINAL_END
+REPLACEMENT_START
+239938,0451627229::Points of View an Anthology of Short Sto,0451627229::Points of View an Anthology of Short Sto,0
+239939,0671631888::MONKEYS,0671631888::MONKEYS,0
+239940,0140113118::Freelance Death (Penguin Crime Fiction),0140113118::Freelance Death (Penguin Crime Fiction),0
+239941,"0385272022::Miracles, a Parascientific Inquiry into Wondrous Phenomena","0385272022::Miracles, a Parascientific Inquiry into Wondrous Phenomena",0
+239942,"0452257565::O, how the wheel becomes it!: A novel","0452257565::O, how the wheel becomes it!: A novel",0
+239943,087338668X::I'Ve Seen the Elephant: An Autobiography,087338668X::I'Ve Seen the Elephant: An Autobiography,0
+239944,"8401474523::El Resplandor/the Shining (Nevedomoe, Neobiasnimoe, Neveroitnoe)","8401474523::El Resplandor/the Shining (Nevedomoe, Neobiasnimoe, Neveroitnoe)",0
+REPLACEMENT_END
+---Chunk 240854-240890---
+ORIGINAL_START
+240494,0333244869::The Black Cat,0333244869::The Crane (M-Books),1
+240495,0721419003::The Art of the Personal Essay,0721419003::Picking Teams (Read with Ladybird S.),1
+240496,3446199799::The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change,3446199799::Ein Haus in Istrien.,1
+240497,0064404102::The Black Cat,0064404102::Glenda Glinka: Witch-At-Large (Trophy Chapter Books (Paperback)),1
+240498,0689854137::The Girl Who Was Supposed to Die,"0689854137::Flame (Book of Sorahb, The)",1
+240499,0689845642::The Secret of the Old Clock,0689845642::PredicKtions,1
+240500,[Error: Unable to find ISBN 2264028181],2264028181::L'oeil de Dieu,1
+240501,2253172278::Unknown,2253172278::Piranha : TempÃ?Âªte en mer de Chine,1
+240502,2253172138::Unknown,2253172138::Iceberg ltd,1
+240503,0395204372::The Joy Luck Club,0395204372::The Hollywood posse: The story of a gallant band of horsemen who made movie history,1
+240504,0671643282::The Art of War,0671643282::WHEN DID I STOP BEING 20,1
+240505,2226109706::,2226109706::A bas les Ã?Â©lÃ?Â¨ves!,1
+240506,2070766640::The Girl with the Dragon Tattoo,2070766640::Les enfants qui tombent dans la mer,1
+240507,0590332635::The Girl with the Dragon Tattoo,0590332635::The Yes Girl (Wildfire No 74),1
+240508,0373037414::The 7th Man,0373037414::An Accidental Engagement,1
+240509,0821735764::The Girl with the Pearl Earring,0821735764::Deadly Breed,1
+240510,0425118355::The 7th Man,0425118355::Surgeon: The View from Behind the Mask,1
+240511,0449704203::The Girl with the Dragon Tattoo,0449704203::The Meaning of Sisterhood,1
+240512,"0553176366::The Secret Diary of Adrian Mole, Age 13 3/4",0553176366::Seniors Super: Old Enough O/S,1
+240513,0553269496::The 7th Man,"0553269496::Heart and Soul (Sweet Dreams, No 138)",1
+240514,0553299808::The Sweet Valley High Collection,"0553299808::His and Hers (Sweet Dreams, No 201)",1
+240515,0553251783::The Sweet Valley High Collection,0553251783::No Strings Attached (Sweet Dreams No 95),1
+240516,0553564811::The Sweet Valley High Collection,"0553564811::Careless Whispers (Sweet Dreams, No 216)",1
+240517,0553564757::Careless Whisper,"0553564757::Dreamskate (Sweet Dreams, No 211)",1
+240518,0553249711::Sweet Dreams No 93,"0553249711::Star Struck (Sweet Dreams, No 79)",1
+240519,0553172220::The Sweetest Thing,0553172220::Life of the Party (Seniors No 17),1
+240520,0373701012::The Best of Me,0373701012::When Dreams Come T,1
+240521,0553178741::The Best of Times,0553178741::Sd 60: Summer Breezes,1
+240522,0821759949::The Wedding Date,0821759949::A Noble Rogue (Zebra Regency Romance),1
+240523,0762102403::The Wedding Date,0762102403::Curing Everyday Ailments: The Natural Way,1
+240524,0821718614::The Heart of the Matter,0821718614::Satin Surrender,1
+240525,0449224864::The Black Cat,0449224864::Coup De Grace,1
+240526,0882666096::The Black Cat,0882666096::The Gardener's Bug Book: Earth-Safe Insect Control,1
+240527,0723555443::The Art of Possibility,0723555443::Tide of Love (Tender Hearts),1
+240528,0553564781::The Sweetest Thing,"0553564781::Finders Keepers (Sweet Dreams, No 213)",1
+240529,0590332481::The Wedding Date,0590332481::Girls of Canby Hall #07: Four is a Crowd,1
+240530,0553299840::The Sweetest Thing,0553299840::Cowboy Kisses,1
+ORIGINAL_END
+REPLACEMENT_START
+240494,0333244869::The Crane (M-Books),0333244869::The Crane (M-Books),0
+240495,0721419003::Picking Teams (Read with Ladybird S.),0721419003::Picking Teams (Read with Ladybird S.),0
+240496,3446199799::Ein Haus in Istrien.,3446199799::Ein Haus in Istrien.,0
+240497,0064404102::Glenda Glinka: Witch-At-Large (Trophy Chapter Books (Paperback)),0064404102::Glenda Glinka: Witch-At-Large (Trophy Chapter Books (Paperback)),0
+240498,"0689854137::Flame (Book of Sorahb, The)","0689854137::Flame (Book of Sorahb, The)",0
+240499,0689845642::PredicKtions,0689845642::PredicKtions,0
+240500,2264028181::L'oeil de Dieu,2264028181::L'oeil de Dieu,0
+240501,2253172278::Piranha : TempÃ?Âªte en mer de Chine,2253172278::Piranha : TempÃ?Âªte en mer de Chine,0
+240502,2253172138::Iceberg ltd,2253172138::Iceberg ltd,0
+240503,0395204372::The Hollywood posse: The story of a gallant band of horsemen who made movie history,0395204372::The Hollywood posse: The story of a gallant band of horsemen who made movie history,0
+240504,0671643282::WHEN DID I STOP BEING 20,0671643282::WHEN DID I STOP BEING 20,0
+240505,2226109706::A bas les Ã?Â©lÃ?Â¨ves!,2226109706::A bas les Ã?Â©lÃ?Â¨ves!,0
+240506,2070766640::Les enfants qui tombent dans la mer,2070766640::Les enfants qui tombent dans la mer,0
+240507,0590332635::The Yes Girl (Wildfire No 74),0590332635::The Yes Girl (Wildfire No 74),0
+240508,0373037414::An Accidental Engagement,0373037414::An Accidental Engagement,0
+240509,0821735764::Deadly Breed,0821735764::Deadly Breed,0
+240510,0425118355::Surgeon: The View from Behind the Mask,0425118355::Surgeon: The View from Behind the Mask,0
+240511,0449704203::The Meaning of Sisterhood,0449704203::The Meaning of Sisterhood,0
+240512,0553176366::Seniors Super: Old Enough O/S,0553176366::Seniors Super: Old Enough O/S,0
+240513,"0553269496::Heart and Soul (Sweet Dreams, No 138)","0553269496::Heart and Soul (Sweet Dreams, No 138)",0
+240514,"0553299808::His and Hers (Sweet Dreams, No 201)","0553299808::His and Hers (Sweet Dreams, No 201)",0
+240515,0553251783::No Strings Attached (Sweet Dreams No 95),0553251783::No Strings Attached (Sweet Dreams No 95),0
+240516,"0553564811::Careless Whispers (Sweet Dreams, No 216)","0553564811::Careless Whispers (Sweet Dreams, No 216)",0
+240517,"0553564757::Dreamskate (Sweet Dreams, No 211)","0553564757::Dreamskate (Sweet Dreams, No 211)",0
+240518,"0553249711::Star Struck (Sweet Dreams, No 79)","0553249711::Star Struck (Sweet Dreams, No 79)",0
+240519,0553172220::Life of the Party (Seniors No 17),0553172220::Life of the Party (Seniors No 17),0
+240520,0373701012::When Dreams Come T,0373701012::When Dreams Come T,0
+240521,0553178741::Sd 60: Summer Breezes,0553178741::Sd 60: Summer Breezes,0
+240522,0821759949::A Noble Rogue (Zebra Regency Romance),0821759949::A Noble Rogue (Zebra Regency Romance),0
+240523,0762102403::Curing Everyday Ailments: The Natural Way,0762102403::Curing Everyday Ailments: The Natural Way,0
+240524,0821718614::Satin Surrender,0821718614::Satin Surrender,0
+240525,0449224864::Coup De Grace,0449224864::Coup De Grace,0
+240526,0882666096::The Gardener's Bug Book: Earth-Safe Insect Control,0882666096::The Gardener's Bug Book: Earth-Safe Insect Control,0
+240527,0723555443::Tide of Love (Tender Hearts),0723555443::Tide of Love (Tender Hearts),0
+240528,"0553564781::Finders Keepers (Sweet Dreams, No 213)","0553564781::Finders Keepers (Sweet Dreams, No 213)",0
+240529,0590332481::Girls of Canby Hall #07: Four is a Crowd,0590332481::Girls of Canby Hall #07: Four is a Crowd,0
+240530,0553299840::Cowboy Kisses,0553299840::Cowboy Kisses,0
+REPLACEMENT_END
+---Chunk 242380-242405---
+ORIGINAL_START
+242017,0804830320::The Art of Possibility,0804830320::Maverick's Guide to Poker,1
+242018,0375714464::The Art of Possibility,0375714464::Gods and Heroes of Ancient Greece (Pantheon Fairy Tale & Folklore Library.),1
+242019,4770016557::The 7 Habits of Highly Effective People: Personal Edition,4770016557::Womansword: What Japanese Words Say About Women,1
+242020,0330303724::The Complete Book of the Dead Sea Scrolls,0330303724::A New Dictionary of American Slang,1
+242021,0679722874::The Art of Possibility,0679722874::Yoga:  The Iyengar Way,1
+242022,0553276646::The Art of Possibility,"0553276646::\""Surely You're Joking Mr. Feynman!\"": Adventures of a Curious Character",1
+242023,0195116895::The Oxford Book of English Verse,0195116895::The Best of Shakespeare (Iona and Peter Opie Library of Children's Literature.),1
+242024,0416258301::The Oxford Book of English Verse,0416258301::The Writing on the Wall,1
+242025,3257219946::The Art of Possibility,3257219946::Rote Gardenien. Roman.,1
+242026,094594604X::The Art of Possibility,094594604X::Flower Essences and Vibrational Healing,1
+242027,0842371516::The Complete Book of Home Remedies,0842371516::Through Gates of Splendor,1
+242028,0374437157::The Oxford Book of English Verse,0374437157::Jack's New Power : Stories from a Caribbean Year,1
+242029,0399504826::The New England Journal of Medicine,0399504826::The language of the night: Essays on fantasy and science fiction,1
+242030,0702225940::The Art of the Personal Essay,0702225940::Flesh and blood (UQP young adult fiction),1
+242031,3499602423::The Oxford Book of English Verse,3499602423::Eine Anthropologin auf dem Mars. Sieben paradoxe Geschichten.,1
+242032,0232519250::The Oxford Book of English Verse,0232519250::How Can We Be Free?,1
+242033,3770731336::The Art of Possibility,"3770731336::WÃ?Â¶rterwerkstatt. Tipps fÃ?Â¼r Jugendliche, die gern schreiben. ( Ab 12 J.).",1
+242034,1872970001::The Art of Possibility,1872970001::Island of the Gods,1
+242035,0316734454::The Art of the Personal Essay,0316734454::Dumpling Soup,1
+242036,3404940180::The Art of Possibility,3404940180::Profikiller. So schreiben Sie das perfekte Krimidrehbuch.,1
+242037,0440506581::The Complete Book of Chess Strategy,0440506581::The Weekend Novelist Writes A Mystery,1
+242038,0708969135::The Art of Possibility,0708969135::Some Other Spring (Linford Romance Library),1
+242039,0754032566::The Complete Poems of Emily Dickinson,0754032566::A Green Too Far,1
+242040,3795007356::The Art of Possibility,"3795007356::Eine andere Art, die Welt zu sehen. Das Aufmerksamkeits- Defizit- Syndrom.",1
+242041,0878338039::The Art of Possibility,0878338039::The Overloving Parent: Making Love Work for You and Your Child,1
+242042,3451052547::Die SchÃ¶ne und die BÃ¶se,3451052547::Schatten auf der Seele. Wege aus Depression und Angst.,1
+ORIGINAL_END
+REPLACEMENT_START
+242017,0804830320::Maverick's Guide to Poker,0804830320::Maverick's Guide to Poker,0
+242018,0375714464::Gods and Heroes of Ancient Greece (Pantheon Fairy Tale & Folklore Library.),0375714464::Gods and Heroes of Ancient Greece (Pantheon Fairy Tale & Folklore Library.),0
+242019,4770016557::Womansword: What Japanese Words Say About Women,4770016557::Womansword: What Japanese Words Say About Women,0
+242020,0330303724::A New Dictionary of American Slang,0330303724::A New Dictionary of American Slang,0
+242021,0679722874::Yoga:  The Iyengar Way,0679722874::Yoga:  The Iyengar Way,0
+242022,"0553276646::\""Surely You're Joking Mr. Feynman!\"": Adventures of a Curious Character","0553276646::\""Surely You're Joking Mr. Feynman!\"": Adventures of a Curious Character",0
+242023,0195116895::The Best of Shakespeare (Iona and Peter Opie Library of Children's Literature.),0195116895::The Best of Shakespeare (Iona and Peter Opie Library of Children's Literature.),0
+242024,0416258301::The Writing on the Wall,0416258301::The Writing on the Wall,0
+242025,3257219946::Rote Gardenien. Roman.,3257219946::Rote Gardenien. Roman.,0
+242026,094594604X::Flower Essences and Vibrational Healing,094594604X::Flower Essences and Vibrational Healing,0
+242027,0842371516::Through Gates of Splendor,0842371516::Through Gates of Splendor,0
+242028,0374437157::Jack's New Power : Stories from a Caribbean Year,0374437157::Jack's New Power : Stories from a Caribbean Year,0
+242029,0399504826::The language of the night: Essays on fantasy and science fiction,0399504826::The language of the night: Essays on fantasy and science fiction,0
+242030,0702225940::Flesh and blood (UQP young adult fiction),0702225940::Flesh and blood (UQP young adult fiction),0
+242031,3499602423::Eine Anthropologin auf dem Mars. Sieben paradoxe Geschichten.,3499602423::Eine Anthropologin auf dem Mars. Sieben paradoxe Geschichten.,0
+242032,0232519250::How Can We Be Free?,0232519250::How Can We Be Free?,0
+242033,"3770731336::WÃ?Â¶rterwerkstatt. Tipps fÃ?Â¼r Jugendliche, die gern schreiben. ( Ab 12 J.).","3770731336::WÃ?Â¶rterwerkstatt. Tipps fÃ?Â¼r Jugendliche, die gern schreiben. ( Ab 12 J.).",0
+242034,1872970001::Island of the Gods,1872970001::Island of the Gods,0
+242035,0316734454::Dumpling Soup,0316734454::Dumpling Soup,0
+242036,3404940180::Profikiller. So schreiben Sie das perfekte Krimidrehbuch.,3404940180::Profikiller. So schreiben Sie das perfekte Krimidrehbuch.,0
+242037,0440506581::The Weekend Novelist Writes A Mystery,0440506581::The Weekend Novelist Writes A Mystery,0
+242038,0708969135::Some Other Spring (Linford Romance Library),0708969135::Some Other Spring (Linford Romance Library),0
+242039,0754032566::A Green Too Far,0754032566::A Green Too Far,0
+242040,"3795007356::Eine andere Art, die Welt zu sehen. Das Aufmerksamkeits- Defizit- Syndrom.","3795007356::Eine andere Art, die Welt zu sehen. Das Aufmerksamkeits- Defizit- Syndrom.",0
+242041,0878338039::The Overloving Parent: Making Love Work for You and Your Child,0878338039::The Overloving Parent: Making Love Work for You and Your Child,0
+242042,3451052547::Schatten auf der Seele. Wege aus Depression und Angst.,3451052547::Schatten auf der Seele. Wege aus Depression und Angst.,0
+REPLACEMENT_END

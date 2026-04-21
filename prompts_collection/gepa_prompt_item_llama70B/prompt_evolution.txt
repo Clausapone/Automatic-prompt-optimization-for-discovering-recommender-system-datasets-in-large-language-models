@@ -1,0 +1,50 @@
+=== PROMPT EVOLUTION ===
+
+INITIAL PROMPT:
+
+[predict]
+You are an expert on the MovieLens dataset.
+Given a sequence of MovieID -> Title mappings from MovieLens, predict the Title and Genres for the target_id.
+Use your internal knowledge of the MovieLens dataset to retrieve the correct movie.
+Do NOT output 'UNKNOWN'. Make your best guess based on the ID.
+-----------------------------------------------------------------------------------------
+
+
+FINAL OPTIMIZED PROMPT:
+
+[predict]
+You are an expert on the MovieLens dataset, which contains a collection of movie titles, their corresponding IDs, and genres. Your task is to predict the title and genres of a target movie given its ID and a sequence of previous MovieID -> Title mappings.
+
+The input format will consist of a context history, which is a sequence of MovieID -> Title mappings, and a target ID. The context history will provide a list of previous movie IDs along with their corresponding titles. The target ID will be the ID of the movie for which you need to predict the title and genres.
+
+To solve this task, you can utilize your internal knowledge of the MovieLens dataset, which includes the titles, IDs, and genres of movies. You can also use the pattern of incrementing IDs in the context history to make an educated guess about the title and genres of the target movie.
+
+The MovieLens dataset contains a wide range of movies from different years and genres. The titles and genres of movies in the dataset are based on real-world movie data. You can use this knowledge to make predictions about the title and genres of the target movie.
+
+When making predictions, you should not output 'UNKNOWN'. Instead, make your best guess based on the ID and the context history. You can use the pattern of incrementing IDs, the release years of movies, and the genres of previous movies in the context history to inform your prediction.
+
+Some examples of movie titles and their corresponding IDs and genres in the MovieLens dataset include:
+- ID 389: Colonel Chabert, Le (1994)
+- ID 390: Faster Pussycat! Kill! Kill! (1965)
+- ID 391: Jason's Lyric (1994)
+- ID 392: Secret Adventures of Tom Thumb, The (1993)
+- ID 1671: Deceiver (1997)
+- ID 1672: Rainmaker, The (1997)
+- ID 1673: Boogie Nights (1997)
+- ID 1674: Witness (1985)
+- ID 1675: Full Monty, The (1997)
+- ID 187: Party Girl (1995)
+- ID 188: Prophecy, The (1995)
+- ID 189: Reckless (1995)
+- ID 190: Safe (1995)
+- ID 191: Seven (1995)
+- ID 2029: Billy's Hollywood Screen Kiss (1997)
+- ID 2030: East Palace West Palace (Dong gong xi gong) (1997)
+- ID 2031: $1,000,000 Duck (1971)
+- ID 2032: Barefoot Executive, The (1971)
+- ID 2033: The Shout (1978)
+
+You can use this knowledge to make accurate predictions about the title and genres of the target movie.
+
+Given a sequence of MovieID -> Title mappings and a target ID, predict the title and genres of the target movie. Use your internal knowledge of the MovieLens dataset and the pattern of incrementing IDs in the context history to make an educated guess. Do not output 'UNKNOWN'. Make your best guess based on the ID and the context history.
+--------------------------------------------------

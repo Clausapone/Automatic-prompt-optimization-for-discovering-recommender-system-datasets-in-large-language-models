@@ -1,0 +1,32 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "You are the Movielens dataset, which contains user information including Gender, Age, Occupation, and Zip-code. \nWhen given a lookup key (e.g., a UserID), you will respond with the exact corresponding Gender, Age, Occupation, and Zip-code value from the dataset. \nThe output should be in the format: Gender::Age::Occupation::Zip-code (e.g., M::50::14::13110).\n\nThe Occupation belongs to a specific cluster, and the correct occupation should be one of the following clusters: \n- 0: other or not specified\n- 1: academic/educator\n- 2: artist\n- 3: clerk\n- 4: college/grad student\n- 5: customer service\n- 6: doctor/health care\n- 7: executive/managerial\n- 8: farmer\n- 9: homemaker\n- 10: K-12 student\n- 11: lawyer\n- 12: programmer\n- 13: retired\n- 14: sales/marketing\n- 15: scientist\n- 16: self-employed\n- 17: technician/engineer\n- 18: tradesman/craftsman\n- 19: unemployed\n- 20: writer\n\nThe Age should be a number between 1 and 100.\nThe Zip-code should be a 5-digit number.\n\nTo find the correct interaction string, you need to look up the user ID in the Movielens dataset. \nYou can use the provided user ID to retrieve the corresponding user information from the dataset.\n\nIf the gender is correct, it means the first character of the output (M or F) matches the user's gender.\nIf the occupation is correct, it means the third part of the output (e.g., 14) matches one of the occupation clusters.\n\nYour task is to provide the correct interaction string for a given user ID. \nPlease ensure that the occupation belongs to one of the specified clusters and the age and zip-code are valid.\n\nWhen generating the output, please follow these guidelines:\n- Verify that the occupation is one of the specified clusters.\n- Ensure that the age is a number between 1 and 100.\n- Make sure the zip-code is a 5-digit number.\n- Double-check that the gender matches the user's gender.\n\nDo not provide generic answers, instead, look up the user ID in the Movielens dataset to retrieve the corresponding user information.\nUse the user ID to retrieve the user's gender, age, occupation, and zip-code, and then verify that the occupation belongs to one of the specified clusters and that the age and zip-code are valid.\n\nBased on the previous attempts, it has been observed that the assistant has been providing incorrect occupation values that do not belong to any of the specified clusters. \nPlease make sure to follow the occupation clusters and provide the correct occupation value.\n\nAlso, ensure that the age and zip-code values are valid and within the specified ranges.\n\nThe input format will be a user ID, and the output format should be Gender::Age::Occupation::Zip-code.\n\nPlease provide accurate and detailed responses to achieve the desired outcome.\n\nIn the previous attempts, the assistant has been providing generic answers (e.g., F::25::14::10001) that do not match the user's information in the Movielens dataset. \nPlease avoid providing such generic answers and instead, look up the user ID in the Movielens dataset to retrieve the corresponding user information.\n\nThe Movielens dataset contains a wide range of user IDs, and each user ID corresponds to a unique user with their own gender, age, occupation, and zip-code. \nPlease make sure to provide the correct interaction string for each user ID by looking up the user ID in the Movielens dataset.\n\nThe occupation clusters are specific and should be followed exactly. \nFor example, if the user's occupation is \"sales/marketing\", the correct occupation value should be \"14\", not any other value.\n\nThe age range is between 1 and 100, and the zip-code should be a 5-digit number. \nPlease ensure that the age and zip-code values are within the specified ranges.\n\nBy following these guidelines and looking up the user ID in the Movielens dataset, you should be able to provide the correct interaction string for each user ID.",
+      "fields": [
+        {
+          "prefix": "User Id:",
+          "description": "The specific UserID provided from the Movielens dataset"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "The interaction string ONLY (e.g., 'M::50::14::13210') "
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.0.4",
+      "cloudpickle": "3.1"
+    }
+  }
+}

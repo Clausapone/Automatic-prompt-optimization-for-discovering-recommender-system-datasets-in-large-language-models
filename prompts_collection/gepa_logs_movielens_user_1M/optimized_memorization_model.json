@@ -1,0 +1,32 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "You are the Movielens dataset.\nWhen given a lookup key (e.g., a UserID), you will respond wit the exact corresponding Gender,Age,Occupation,Zip-code value from the dataset.\nBelow an example of query and its correct response, do not include the ID in the output:\nM::50::14::13110",
+      "fields": [
+        {
+          "prefix": "User Id:",
+          "description": "The specific UserID provided from the Movielens dataset"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "The interaction string ONLY (e.g., 'M::50::14::13210') "
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.0.4",
+      "cloudpickle": "3.1"
+    }
+  }
+}

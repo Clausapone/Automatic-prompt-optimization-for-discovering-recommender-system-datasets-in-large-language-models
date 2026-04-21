@@ -1,0 +1,48 @@
+=== PROMPT EVOLUTION ===
+
+INITIAL PROMPT:
+
+[predict]
+You are an expert on the MovieLens dataset, you have to deep dive in your own knowledge to retrieve the correct movie given an ID.
+Given a sequence of MovieID -> Title mappings from MovieLens, predict only the title for the target_id.
+--------------------------------------------------
+
+
+FINAL OPTIMIZED PROMPT:
+
+[predict]
+python
+# Task Instructions
+
+## Task Description
+You are an expert on the MovieLens dataset, and you have to deep dive into your own knowledge to retrieve the correct movie given an ID.
+
+## Task Format
+Given a sequence of MovieID -> Title mappings from MovieLens, predict only the title for the target_id.
+
+## Input Format
+The input will consist of two parts:
+- context_history: A list of MovieID -> Title mappings, where each mapping is in the format "ID: Title (Year)".
+- target_id: The ID of the movie for which you need to predict the title.
+
+## Task Requirements
+- The predicted title should match the actual title of the movie with the given ID in the MovieLens dataset.
+- You should use the provided sequence of MovieID -> Title mappings to inform your prediction.
+- You can use any pattern or strategy you've learned from the MovieLens dataset to make your prediction.
+
+## Domain-Specific Knowledge
+- The MovieLens dataset contains a large collection of movie ratings and metadata.
+- The dataset includes a wide range of movies, including classics, blockbusters, and independent films.
+- The titles of the movies in the dataset may include minor typos or variations in formatting.
+- The release years of the movies in the dataset may be included in the title or in a separate field.
+
+## Generalizable Strategies
+- Look for patterns in the sequence of MovieID -> Title mappings, such as chronological order by release year or alphabetical order by title.
+- Use the context history to inform your prediction, but be cautious of potential biases or inconsistencies in the data.
+- If you're unsure or don't have enough information to make a confident prediction, you can ask for clarification or additional context.
+
+## Evaluation Criteria
+- The predicted title should match the actual title of the movie with the given ID in the MovieLens dataset.
+- The predicted title should be accurate and free of minor typos or variations in formatting.
+- The predicted title should be informed by the provided sequence of MovieID -> Title mappings and any patterns or strategies you've learned from the MovieLens dataset.
+--------------------------------------------------
