@@ -1,6 +1,6 @@
 # GEPA for Detecting Memorization in LLM-based Recommender Systems
 
-## <a id="overview"></a>📌 Overview
+## 📌 Overview
 This research investigates the phenomenon of dataset memorization in Large Language Models (LLMs) within the context of recommender systems. Specifically, we employ the **GEPA (Genetic Pareto Algorithm)** as an evolutionary optimization strategy to systematically probe whether LLMs memorize training data rather than generalize from it.
 
 The work builds upon two prior studies:
@@ -9,8 +9,9 @@ The work builds upon two prior studies:
 
 Our contribution extends these efforts by framing memorization detection as a **multi-objective optimization problem**, where GEPA evolves prompts designed to extract latent memorized information from models.
 
+---
 
-## <a id="introduction"></a>🧠 Introduction
+## 🧠 Introduction
 Large language models (LLMs) have been widely adopted for many machine learning tasks. However, a growing concern is that these models may rely on memorizing datasets encountered during training rather than learning generalizable patterns. Dataset memorization can lead to misleading experimental evaluations because strong performance may stem from data leakage rather than true generalization.
 
 In this study, we present an evolutionary-based methodology using GEPA (Genetic Pareto Algorithm) to investigate dataset memorization in LLMs. Our approach uses GEPA to automatically generate input queries and prompt structures that maximize the extraction of potentially memorized information. Framing memorization detection as a search and optimization problem, GEPA explores a space of candidate expressions designed to elicit specific data instances, attributes, or relationships from the target dataset.
@@ -19,26 +20,27 @@ We evaluate memorization by measuring the overlap between the information genera
 
 Overall, this study introduces GEPA as a novel, automated tool for auditing memorization in large models and contributes to more reliable evaluation practices and a deeper understanding of how training data influences model behavior.
 
+---
 
 ## 📚 Table of Contents
-- [Overview](#overview)
-- [Introduction](#introduction)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation & Setup](#installation-setup)
-- [Usage](#usage)
-- [Methodology](#methodology)
-- [Evaluation Metrics](#evaluation-metrics)
-- [Results](#results)
-- [Future Work](#future-work)
-- [Contributing](#contributing)
-- [License](#license)
+- [Overview](#-overview)
+- [Introduction](#-introduction)
+- [Project Structure](#-project-structure)
+- [Prerequisites](#-prerequisites)
+- [Installation & Setup](#-installation--setup)
+- [Usage](#-usage)
+- [Methodology](#-methodology)
+- [Evaluation Metrics](#-evaluation-metrics)
+- [Results](#-results)
+- [Future Work](#-future-work)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ---
 
-## <a id="project-structure"></a>📂 Project Structure
+## 📂 Project Structure
 
-
+```text
 gepa/
 ├── .gitignore                  <-- Git configuration
 ├── pyproject.toml              <-- Project configuration (
@@ -86,7 +88,7 @@ gepa/
 
 ---
 
-## <a id="prerequisites"></a>⚙️ Prerequisites
+## ⚙️ Prerequisites
 Before running the project, ensure you have the following installed:
 
 - Python 3.9+
@@ -105,7 +107,7 @@ Before running the project, ensure you have the following installed:
 
 ---
 
-## <a id="installation-setup"></a>🚀 Installation & Setup
+## 🚀 Installation & Setup
 ```bash
 # Clone the repository
 git clone <repository-url>
@@ -119,8 +121,9 @@ source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+---
 
-## <a id="methodology"></a>⚙️ Methodology
+## ⚙️ Methodology
 
 The core idea is to treat memorization detection as a search problem:
 
@@ -136,7 +139,9 @@ The core idea is to treat memorization detection as a search problem:
 - Crossover
 - Selection based on Pareto dominance
 
-## <a id="evaluation-metrics"></a>📏 Evaluation Metrics
+---
+
+## 📏 Evaluation Metrics
 
 We evaluate memorization using:
 - **Exact Match Rate** – Direct overlap with dataset entries
@@ -144,7 +149,9 @@ We evaluate memorization using:
 - **Coverage** – Fraction of dataset correctly recovered under prompts
 - **Diversity** of Extracted Data
 
-## <a id="results"></a>📊 Results
+---
+
+## 📊 Results
 
 Key findings include:
 - **GEPA** can uncover non-trivial memorization patterns embedded directly within the weights.
@@ -153,19 +160,23 @@ Key findings include:
 
 *(Insert plots, tables, or summaries here)*
 
-## <a id="future-work"></a>🔮 Future Work
+---
+
+## 🔮 Future Work
 - Extend to larger and more diverse datasets
 - Explore defenses against memorization
 - Apply to multimodal models
 - Integrate privacy-preserving training techniques
 
-## <a id="contributing"></a>🤝 Contributing
+---
+
+## 🤝 Contributing
 
 Contributions are welcome. Please:
 1. Fork the repository
 2. Create a new branch
 3. Submit a pull request
 
-## <a id="license"></a>📄 License
+## 📄 License
 
 This project is licensed under the MIT License.
